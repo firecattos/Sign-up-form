@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    text-align: center;
+    width: 70vw;
+
+    background-image: url(img/Braies_Lake.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#imageCredit{
+    color: white;
+    position: relative;
+    top: 90vh;
+}
+
+#imageCredit a{
+    color: white;
+}
