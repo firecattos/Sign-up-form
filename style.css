@@ -1,3 +1,8 @@
+@font-face {
+    font-family: NorseBold;
+    src: url(norse-bold.otf);
+}
+
 body{
     margin: 0;
 }
@@ -9,19 +14,49 @@ body{
 
 .left{
     text-align: center;
-    width: 70vw;
-
+    width: 35vw;
     background-image: url(img/Braies_Lake.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#imageCredit{
+.banner{
+    margin-top: 25vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: norsebold;
+    font-size: 3rem;
     color: white;
-    position: relative;
-    top: 90vh;
 }
 
-#imageCredit a{
+.banner img{
+    height: 20vh;
+}
+
+#imageCredit, #imageCredit a{
     color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 3rem;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+}
+
+.inpWrap label{
+    display: block;
 }
