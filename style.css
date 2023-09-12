@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: sans-serif;
     margin: 0;
 }
 
@@ -13,8 +14,8 @@ body{
 }
 
 .left{
+    flex: 3;
     text-align: center;
-    width: 35vw;
     background-image: url(img/Braies_Lake.jpg);
     background-position: center center;
     background-size: cover;
@@ -44,19 +45,47 @@ body{
 }
 
 .content{
+    flex: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background-color: /*#c1c1f0*/ #f0f2f5;
     padding: 3rem;
+}
+
+#motText{
+    font-weight: bold;
 }
 
 .formContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
+
+    background-color: white;
+    box-shadow: -3rem 0 white, 3rem 0 white;
+    padding: 1rem 0;
 }
 
 .inpWrap label{
     display: block;
+}
+
+.btn{
+    margin-top: 1rem;
+}
+
+.btn button{
+    font-size: medium;
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #c2cad6;
+    color: #333;
+    font-weight: bold;
+}
+
+.logIn{
+    text-decoration: none;
+    color: #667a99
 }

@@ -10,23 +10,23 @@
     <div class="container">
         <div class="left">
             <div class="banner">
-                <img src="img/odin-lined.png">ODIN
+                <img src="img/odin-lined.png">TEST      <!--CHANGE-->
             </div>
             <p id="imageCredit">Photo by <a href="https://unsplash.com/photos/a-mountain-with-a-lake-in-the-middle-of-it-b-L7Y7EzGDo">Mushegh Hakobyan</a>
                 on <a href="https://unsplash.com/">Unsplash</a></p>
         </div>
 
         <div class="content">
-            <p>This is not a real online service! You know you need something
+            <p id="motText">This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
                 Sign up <em>now</em> to get started.
             </p>
-            <p>You <em>know</em> you want to!</p>
+            <p id="motText">You <em>know</em> you want to!</p>
             <!--
             <div class="formContainer">
             -->
             <div>
-                <form action="" method="post" class="formContainer">
+                <form id="signUp" action="" method="post" class="formContainer">
                     <div class="inpWrap">
                         <label for="firstName">First Name</label>
                         <input type="text" name="firstName" id="firstName">
@@ -51,12 +51,17 @@
                         <label for="pwdConfirm">Confirm Password</label>
                         <input type="password" name="pwdConfirm" id="pwdConfirm">
                     </div>
+                    <!--
                     <div>
                         <button>Create Account</button>
                     </div>
+                    -->
                 </form>
+                <div class="btn">
+                    <button form="signUp">Create Account</button>
+                </div>
             </div>
-            <p>Already have an account? Log In</p>
+            <p>Already have an account? <a class="logIn" href="">Log In</a></p>
         </div>
     </div>
 </body>
